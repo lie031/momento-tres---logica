@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        String[] clothingCollection = {"Jeans AirFlex", "Graphic Tee", "Denim Jacket", null, null};
+        String[] clothingCollection = { "Jeans AirFlex", "Graphic Tee", "Denim Jacket", null, null };
         Scanner scanner = new Scanner(System.in);
         int menuOption;
-        
+
         do {
             System.out.println("\n========================================");
             System.out.println("       CATÁLOGO DE PRENDAS - BODEGA     ");
@@ -18,7 +18,7 @@ public class App {
             System.out.println(" 4. Salir");
             System.out.println("----------------------------------------");
             System.out.print(" Por favor, seleccione una opción: ");
-            
+
             menuOption = scanner.nextInt();
             scanner.nextLine();
             System.out.println("----------------------------------------");
@@ -28,7 +28,7 @@ public class App {
                     System.out.println("--- LISTADO DE PRENDAS ---");
                     listCatalog(clothingCollection);
                     break;
-                    
+
                 case 2:
                     System.out.print("Escriba el nombre de la referencia que quiere buscar: ");
                     String referenceName = scanner.nextLine();
@@ -39,7 +39,7 @@ public class App {
                         System.out.println("-> No se ha encontrado en la colección.");
                     }
                     break;
-                
+
                 case 3:
                     System.out.print("Escriba el nombre de la prenda que quiere agregar: ");
                     String garmentName = scanner.nextLine();
@@ -50,11 +50,10 @@ public class App {
                         System.out.println("-> No hay espacios disponibles para agregar.");
                     }
                     break;
-                    
                 case 4:
                     System.out.println("Saliendo del sistema... ¡Hasta luego!");
                     break;
-                    
+
                 default:
                     System.out.println("-> Opción no válida. Intente de nuevo.");
             }
@@ -91,5 +90,3 @@ public class App {
         return false;
     }
 }
-
-
