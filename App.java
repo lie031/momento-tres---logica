@@ -34,7 +34,7 @@ public class App {
                     String referenceName = scanner.nextLine();
                     boolean isFound = searchItem(clothingCollection, referenceName);
                     if (isFound) {
-                        System.out.println("-> ¡Se ha encontrado en la coleccion!");
+                        System.out.println("-> ¡Se ha encontrado en la colección!");
                     } else {
                         System.out.println("-> No se ha encontrado en la colección.");
                     }
